@@ -2,30 +2,17 @@ package mapper.imp;
 
 import java.util.Date;
 
-public class Usuario {
-
-    private Long id;
+public class UsuarioDTOForm {
     private String nome;
     private String cpf;
     private String rg;
     private Date dataNascimento;
 
-    public Usuario() {
-    }
-
-    public Usuario(String nome, String cpf, String rg, Date dataNascimento) {
+    public UsuarioDTOForm(String nome, String cpf, String rg, Date dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
         this.dataNascimento = dataNascimento;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -62,9 +49,8 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
+        return "UsuarioDTOForm{" +
+                "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", rg='" + rg + '\'' +
                 ", dataNascimento=" + dataNascimento +
